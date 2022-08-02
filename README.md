@@ -14,12 +14,19 @@ technologies that encapsulate all modules covered during training.
 ## Running the tests
 
 ### Unit Tests
+* Mocha
+* Chai
 
 ### Integration Tests 
 
 ## Deployment
 
 ## Built With
+* Full-Stack Development Technologies: MERN stack
+	* Database Management System: MongoDB
+	* Back-End Programming Language: Node
+	* API Development Platform: Express
+	* Front-End Development Framework: React
 
 ## Versioning
 We use [Github](https://github.com/QAC-Sierra/QACinemas) for versioning.

@@ -22,14 +22,20 @@ technologies that encapsulate all modules covered during training.
 ## Built With
 
 ## Versioning
+We use [Github](https://github.com/QAC-Sierra/QACinemas) for versioning.
 
 ## Authors
+* **Ridwan Kawsar** - [ridwankawsar](https://github.com/Ridwan-Kawsar)
+* **Saif Hussain** - [saifhussain](https://github.com/saifhussain98)
+* **Trevor Oregbonwanhia** - [trevororegbonwanhia](https://github.com/TrevorOregbomGitHub)
+* **Lewis Pearson** - [lewispearson](https://github.com/LewisPearsonGitHub)
+* **Cameron Black** - [cameronblack](https://github.com/Cam-Black)
 
 ## License
 MIT License
 
 Copyright (c) [2022] [Saif Hussain, Cameron Black, Ridwan Kawsar, 
-Trevor Oregbonwanhi, Lewis Pearson]
+Trevor Oregbonwanhia, Lewis Pearson]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

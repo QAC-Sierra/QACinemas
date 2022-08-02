@@ -5,6 +5,7 @@ throughout the project, and to help improve code readability.
 Reacts full styleguide can be found [here](https://airbnb.io/javascript/react/).
 
 - [Git Branch Naming](#git-branch-naming)
+- [Merging Branches](#merging-branches)
 - [File Naming](#file-naming)
 - [Variable Naming](#variable-naming)
 - [Component Naming](#component-naming)
@@ -24,6 +25,11 @@ git commint -m "QAC-4 #in-progress #comment Relevant comment relating to issue a
 Note use of caps for issue number in commit message.
 
 `#in-progress` can be substituted for `#done` once the task is complete.
+
+-------------
+### Merging Branches
+Merges to `dev` branch should only be done via pull requests on GitHub. No-one should be creating any pull requests 
+to main until whole team is happy we have an MVP.
 
 -------------
 ### File Naming

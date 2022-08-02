@@ -14,13 +14,14 @@ Reacts full styleguide can be found [here](https://airbnb.io/javascript/react/).
 
 -------------
 ### Git Branch Naming 
-Branch names should be all lower-case, using the Epic issue number and epic name, e.g. `qac-3-my-epic`.
+Branch names should be all lower-case, using the Epic issue number and epic name, using `-` where there are spaces 
+in the epic name, e.g. `qac-3-my-epic`.
 
 In each branch, smart commits must be used to highlight each task being tackled in the commit message.
 
 For moving an issue on Jira Board to in-progress use:
 ```
-git commint -m "QAC-4 #in-progress #comment Relevant comment relating to issue and work done on issue."
+git commit -m "QAC-4 #in-progress #comment Relevant comment relating to issue and work done on issue."
 ```
 Note use of caps for issue number in commit message.
 

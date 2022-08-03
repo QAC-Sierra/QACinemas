@@ -9,7 +9,7 @@ const ListingsGallery = () => {
                 </h1>
 			</header>
 		</>
-	)
+	);
 }
 
 export default ListingsGallery;

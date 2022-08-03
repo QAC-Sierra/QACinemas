@@ -8,7 +8,6 @@ const movies = new Schema({
     genre: String,
     actors: [{
         name: String,
-        age: Number
     }],
     director: String,
     showingTimes: [{

@@ -9,8 +9,7 @@ const Classifications = () => {
 				<div className="container">
 					<div className="row">
 						<h3>Here you can find information regarding movie classifications, why movies are classified the
-							way
-							they are and what content may be involved in movies with certain ratings.
+							way they are and what content may be involved in movies with certain ratings.
 						</h3>
 					</div>
 				</div>

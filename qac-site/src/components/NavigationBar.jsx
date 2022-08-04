@@ -61,15 +61,15 @@ const NavigationBar = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/listingsgallery" element={<ListingsGallery />} />
-        <Route path="/openingtimes" element={<OpeningTimes />} />
-        <Route path="/gettingthere" element={<GettingThere />} />
-        <Route path="/newreleases" element={<NewReleases />} />
+        <Route path="/listings-gallery" element={<ListingsGallery />} />
+        <Route path="/opening-times" element={<OpeningTimes />} />
+        <Route path="/getting-there" element={<GettingThere />} />
+        <Route path="/new-releases" element={<NewReleases />} />
         <Route path="/classifications" element={<Classifications />} />
         <Route path="/screens" element={<Screens />} />
-        <Route path="/discussionboard" element={<DiscussionBoard />} />
-        <Route path="/ticketbookings" element={<TicketBookings />} />
-        <Route path="/placestogo" element={<PlacesToGo />} />
+        <Route path="/discussion-board" element={<DiscussionBoard />} />
+        <Route path="/ticket-bookings" element={<TicketBookings />} />
+        <Route path="/places-to-go" element={<PlacesToGo />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

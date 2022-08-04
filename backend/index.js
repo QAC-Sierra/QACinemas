@@ -4,16 +4,12 @@ const cors = require('cors');
 const db = require('./db');
 
 const app = express();
+const bookingsRouter = require('./routes/bookings-router');
 
 app.use(cors());
 
 db.on('error', console.error.bind(console, 'MongoDB connection error'));
 
-
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-});
-
-
+app.use('api', bookingsRouter);
 app.listen(4494);
 

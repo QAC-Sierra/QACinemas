@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 Schema = mongoose.Schema;
 
-const bookings = new Schema({
+const Booking = new Schema({
     booking_id: Number,
     title: String,
     screeningTime: Number,
@@ -13,4 +13,4 @@ const bookings = new Schema({
 });
 
 
-module.exports = bookings;
+module.exports = mongoose.model('bookings', Booking);

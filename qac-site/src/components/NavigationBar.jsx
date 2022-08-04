@@ -24,16 +24,16 @@ const NavigationBar = () => {
               <Link to="/">Home</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/listingsgallery">Listings Gallery</Link>
+              <Link className='link' to="/listings-gallery">Listings Gallery</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/OpeningTimes">Opening Times</Link>
+              <Link className='link' to="/opening-times">Opening Times</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/GettingThere">Getting There</Link>
+              <Link className='link' to="/getting-there">Getting There</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/NewReleases">New Releases</Link>
+              <Link className='link' to="/new-releases">New Releases</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
               <Link className='link' to="/classifications">Classifications</Link>
@@ -42,13 +42,13 @@ const NavigationBar = () => {
               <Link className='link' to="/screens">Screens</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/discussionboard">Discussion Board</Link>
+              <Link className='link' to="/discussion-board">Discussion Board</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/ticketbookings">Ticket Bookings</Link>
+              <Link className='link' to="/ticket-bookings">Ticket Bookings</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/PlacesToGo">Places To Go</Link>
+              <Link className='link' to="/places-to-go">Places To Go</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
               <Link className='link' to="/about">About</Link>

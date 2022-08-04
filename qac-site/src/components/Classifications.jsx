@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import {Container, Row} from "react-bootstrap";
-import "./component styles/Classifications.css"
+import "./styles/Classifications.css"
 
 const Classifications = () => {
 	return (<>

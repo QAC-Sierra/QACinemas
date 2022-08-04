@@ -5,7 +5,7 @@ const payments = new Schema({
     payment_id: Number,
     booking_id: Number,
     cardholderName: String,
-    cardNumber: String,
+    cardNumber: Number,
     expiryDate: String,
     securityCode: String
 });

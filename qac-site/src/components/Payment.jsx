@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
+import "./styles/Payment.css"
 
 const Payment = () => {
 	return (
@@ -15,12 +16,18 @@ const Payment = () => {
 				</Row>
 				<Row>
 					<Form>
-						<Form.Group>
-							<Col>
-								<Form.Label>First Name</Form.Label>
+						<Col>
+							<Form.Group>
+								<Form.Label>First Name:</Form.Label>
 								<Form.Control type="text"/>
-							</Col>
-						</Form.Group>
+							</Form.Group>
+						</Col>
+						<Col>
+							<Form.Group>
+								<Form.Label>Surname:</Form.Label>
+								<Form.Control type="text"/>s
+							</Form.Group>
+						</Col>
 					</Form>
 				</Row>
 			</Container>

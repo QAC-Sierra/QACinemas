@@ -33,7 +33,7 @@ const NavigationBar = () => {
               <Link className='link' to="/GettingThere">Getting There</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/newreleases">New Releases</Link>
+              <Link className='link' to="/NewReleases">New Releases</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
               <Link className='link' to="/classifications">Classifications</Link>
@@ -63,8 +63,8 @@ const NavigationBar = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/listingsgallery" element={<ListingsGallery />} />
         <Route path="/openingtimes" element={<OpeningTimes />} />
-        <Route path="/location" element={<GettingThere />} />
-        <Route path="/newreleasesgallery" element={<NewReleases />} />
+        <Route path="/gettingthere" element={<GettingThere />} />
+        <Route path="/newreleases" element={<NewReleases />} />
         <Route path="/classifications" element={<Classifications />} />
         <Route path="/screens" element={<Screens />} />
         <Route path="/discussionboard" element={<DiscussionBoard />} />

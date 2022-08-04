@@ -1,13 +1,13 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import HomePage from "./components/HomePage";
-import Classifications from "./components/Classifications";
+import NavigationBar from "./components/NavigationBar";
+
 
 function App() {
   return (
     <div className="App">
-      <Classifications />
+      <NavigationBar />
     </div>
   );
 }

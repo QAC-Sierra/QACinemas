@@ -4,7 +4,7 @@ import About from './About';
 import Classifications from './Classifications';
 import Contact from './Contact';
 import GettingThere from './GettingThere';
-// import DiscussionBoard from '../components/DiscussionBoard';
+import DiscussionBoard from '../components/DiscussionBoard';
 import HomePage from './HomePage';
 import ListingsGallery from './ListingsGallery';
 import NewReleases from './NewReleases';
@@ -41,9 +41,9 @@ const NavigationBar = () => {
             <button type="button" className="btn btn-outline-dark">
               <Link className='link' to="/screens">Screens</Link>
             </button>
-            {/* <button type="button" className="btn btn-outline-dark">
+            <button type="button" className="btn btn-outline-dark">
               <Link className='link' to="/discussionboard">Discussion Board</Link>
-            </button> */}
+            </button>
             <button type="button" className="btn btn-outline-dark">
               <Link className='link' to="/ticketbookings">Ticket Bookings</Link>
             </button>
@@ -67,7 +67,7 @@ const NavigationBar = () => {
         <Route path="/newreleasesgallery" element={<NewReleases />} />
         <Route path="/classifications" element={<Classifications />} />
         <Route path="/screens" element={<Screens />} />
-        {/* <Route path="/discussionboard" element={<DiscussionBoard />} /> */}
+        <Route path="/discussionboard" element={<DiscussionBoard />} />
         <Route path="/ticketbookings" element={<TicketBookings />} />
         <Route path="/placestogo" element={<PlacesToGo />} />
         <Route path="/about" element={<About />} />

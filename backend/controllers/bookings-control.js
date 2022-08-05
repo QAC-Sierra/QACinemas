@@ -31,7 +31,7 @@ createBooking = (req,res) => {
 }
 
 getBookingById = async (req, res) => {
-    await Booking.findById(req.params.id, (err, booking) => {
+    await Booking.findOne({booking_id: req.params.id}, (err, booking) => {
         if (err) {
             return res.status(400).json({success:false, error: err});
         }
@@ -40,6 +40,18 @@ getBookingById = async (req, res) => {
             return res.status(404).json({success:false, error: 'Booking not found!'});
         }
         return res.status(200).json({success:true, data: booking});
+    }).catch(err => console.log(err));
+}
+
+getLatestBooking = async (req, res) => {
+    await Booking.find({}, (err, bookings) => {
+        if (err) {
+            return res.status(400).json({success:false, error: err});
+        }
+        if (!bookings.length) {
+            return res.status(404).json({success:false, error: 'No bookings found!'});
+        }
+        return res.status(200).json({success:true, data: bookings});
     }).catch(err => console.log(err));
 }
 
@@ -59,4 +71,5 @@ module.exports = {
     createBooking,
     getBookingById,
     getBookings,
+    getLatestBooking,
 }

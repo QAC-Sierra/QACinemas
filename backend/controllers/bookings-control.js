@@ -43,18 +43,6 @@ getBookingById = async (req, res) => {
     }).catch(err => console.log(err));
 }
 
-getLatestBooking = async (req, res) => {
-    await Booking.find({}, (err, bookings) => {
-        if (err) {
-            return res.status(400).json({success:false, error: err});
-        }
-        if (!bookings.length) {
-            return res.status(404).json({success:false, error: 'No bookings found!'});
-        }
-        return res.status(200).json({success:true, data: bookings});
-    }).catch(err => console.log(err));
-}
-
 getBookings = async (req, res) => {
     await Booking.find({}, (err, bookings) => {
         if (err) {

@@ -39,7 +39,7 @@ getPaymentById = async (req, res) => {
         if (!payment) {
             return res.status(404).json({success:false, error: 'Payment not found!'});
         }
-        return res.status(200).json({success:true, data: booking});
+        return res.status(200).json({success:true, data: payment});
     }).catch(err => console.log(err));
 }
 

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 Schema = mongoose.Schema;
 
-const payments = new Schema({
+const Payment = new Schema({
     payment_id: Number,
     booking_id: Number,
     cardholderName: String,
@@ -11,4 +11,4 @@ const payments = new Schema({
 });
 
 
-module.exports = payments;
+module.exports = mongoose.model('payments', Payment);

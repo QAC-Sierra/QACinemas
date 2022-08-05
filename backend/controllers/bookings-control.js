@@ -6,7 +6,7 @@ createBooking = (req,res) => {
     if (!body) {
         return res.status(400).json({
             success:false,
-            error: 'You must provide a movie',
+            error: 'You must provide a booking',
         })
     }
 
@@ -59,5 +59,4 @@ module.exports = {
     createBooking,
     getBookingById,
     getBookings,
-    getLatestBooking,
 }

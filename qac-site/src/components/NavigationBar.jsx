@@ -12,6 +12,7 @@ import OpeningTimes from './OpeningTimes';
 import PlacesToGo from './PlacesToGo';
 import Screens from './Screens';
 import TicketBookings from './TicketBookings';
+import LogInSignUp from './LogInSignUp';
 
 
 const NavigationBar = () => {
@@ -22,6 +23,9 @@ const NavigationBar = () => {
         <nav>
             <button type="button" className="btn btn-outline-dark">
               <Link to="/">Home</Link>
+            </button>
+            <button type="button" className="btn btn-outline-dark">
+              <Link to="/login">Login</Link>
             </button>
             <button type="button" className="btn btn-outline-dark">
               <Link className='link' to="/listings-gallery">Listings Gallery</Link>
@@ -61,6 +65,7 @@ const NavigationBar = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LogInSignUp />} />
         <Route path="/listings-gallery" element={<ListingsGallery />} />
         <Route path="/opening-times" element={<OpeningTimes />} />
         <Route path="/getting-there" element={<GettingThere />} />

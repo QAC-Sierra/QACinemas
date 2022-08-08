@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 Schema = mongoose.Schema;
 
 
-const movies = new Schema({
+const Movie = new Schema({
     movie_id: Number,
     title: String,
     genre: String,
@@ -16,4 +16,4 @@ const movies = new Schema({
     imageLink: String
 });
 
-module.exports = movies;
+module.exports = mongoose.model('movies', Movie);

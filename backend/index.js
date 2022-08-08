@@ -10,7 +10,7 @@ const paymentsRouter = require('./routes/payments-router');
 const moviesRouter = require('./routes/movies-router');
 const usersRouter = require('./routes/users-router');
 const ratingsRouter = require('./routes/ratings-router');
-const commentRouter = require('./routes/comments-router');
+const commentsRouter = require('./routes/comments-router');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());

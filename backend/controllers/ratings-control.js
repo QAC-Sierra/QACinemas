@@ -56,7 +56,7 @@ getRatings = async (req, res) => {
 }
 
 module.exports = {
-    createBooking,
-    getBookingById,
-    getBookings,
+    createRating,
+    getRatingById,
+    getRatings,
 }

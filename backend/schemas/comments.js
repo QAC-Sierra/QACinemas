@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 Schema = mongoose.Schema;
 
-const comments = new Schema({
+const Comment = new Schema({
     comment_id: Number,
     user_id: Number,
     movie_id: Number,
@@ -9,4 +9,4 @@ const comments = new Schema({
 });
 
 
-module.exports = comments;
+module.exports = mongoose.model('comments',Comment);

@@ -10,6 +10,7 @@ const router = express.Router();
 router.post('/create', PaymentsControl.createPayment);
 router.get('/getById/:id', PaymentsControl.getPaymentById);
 router.get('/getAll', PaymentsControl.getPayments);
+router.delete('/delete', PaymentsControl.deletePayment);
 
 module.exports=router;
 

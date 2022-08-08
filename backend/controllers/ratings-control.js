@@ -55,8 +55,21 @@ getRatings = async (req, res) => {
     }).catch(err => console.log(err));
 }
 
+deleteRating = async (req, res) => {
+    await Rating.findOneAndDelete({rating_id: req.params.id}, (err, rating) => {
+        if (err) {
+            return res.status(400).json({success:false, error: err});
+        }
+        if (!rating) {
+            return res.status(404).json({success:false, error: 'No rating found!'});
+        }
+        return res.status(200).json({success:true, data: rating});
+    }).catch(err => console.log(err));
+}
+
 module.exports = {
     createRating,
     getRatingById,
     getRatings,
+    deleteRating,
 }

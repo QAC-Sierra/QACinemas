@@ -10,6 +10,7 @@ const router = express.Router();
 router.post('/create', CommentsControl.createComment);
 router.get('/getById/:id', CommentsControl.getCommentById);
 router.get('/getAll', CommentsControl.getComments);
+router.delete('/delete', CommentsControl.deleteComment);
 
 module.exports=router;
 

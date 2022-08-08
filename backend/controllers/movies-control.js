@@ -54,9 +54,21 @@ getMovies = async (req, res) => {
         return res.status(200).json({success:true, data: movies});
     }).catch(err => console.log(err));
 }
+deleteMovie = async (req, res) => {
+    await Movie.findOneAndDelete({movie_id: req.params.id}, (err, movie) => {
+        if (err) {
+            return res.status(400).json({success:false, error: err});
+        }
+        if (!movie) {
+            return res.status(404).json({success:false, error: 'No movie found!'});
+        }
+        return res.status(200).json({success:true, data: movie});
+    }).catch(err => console.log(err));
+}
 
 module.exports = {
     createMovie,
     getMovieById,
     getMovies,
+    deleteMovie,
 }

@@ -9,5 +9,6 @@ const router = express.Router();
 router.post('/create', MoviesControl.createMovie);
 router.get('/getById/:id', MoviesControl.getMovieById);
 router.get('/getAll', MoviesControl.getMovies);
+router.delete('/delete', MoviesControl.deleteMovie);
 
 module.exports =router;

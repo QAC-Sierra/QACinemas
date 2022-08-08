@@ -55,8 +55,22 @@ getComments = async (req, res) => {
     }).catch(err => console.log(err));
 }
 
+deleteComment = async (req, res) => {
+    await Comment.findOneAndDelete({comment_id: req.params.id}, (err, comment) => {
+        if (err) {
+            return res.status(400).json({success:false, error: err});
+        }
+        if (!comment) {
+            return res.status(404).json({success:false, error: 'No comment found!'});
+        }
+        return res.status(200).json({success:true, data: comment});
+    }).catch(err => console.log(err));
+}
+
+
 module.exports = {
     createComment,
     getCommentById,
     getComments,
+    deleteComment,
 }

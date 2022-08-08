@@ -55,8 +55,21 @@ getPayments = async (req, res) => {
     }).catch(err => console.log(err));
 }
 
+deletePayment = async (req, res) => {
+    await Payment.findOneAndDelete({payment_id: req.params.id}, (err, payment) => {
+        if (err) {
+            return res.status(400).json({success:false, error: err});
+        }
+        if (!payment) {
+            return res.status(404).json({success:false, error: 'No payment found!'});
+        }
+        return res.status(200).json({success:true, data: payment});
+    }).catch(err => console.log(err));
+}
+
 module.exports = {
     createPayment,
     getPaymentById,
     getPayments,
+    deletePayment,
 }

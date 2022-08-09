@@ -15,7 +15,7 @@ const Payment = () => {
 	useEffect(() => {
 		const makeRequest = () => {
 			console.log(stripeToken);
-			axios.post("http://localhost:4494/payment/create",
+			axios.post("http://localhost:4494/payments/create",
 				{
 					tokenId: stripeToken.id,
 					name: stripeToken.card.name,

@@ -10,23 +10,27 @@ const Payment = () => {
 	
 	const onToken = async (token) => {
 		await setStripeToken(token);
-		console.log(stripeToken);
 	}
 	
 	useEffect(() => {
-		const makeRequest = async () => {
-			try {
-				console.log(stripeToken);
-				const res = await axios.post("http://localhost:5000/token/create",
-					{
-						tokenId: stripeToken.id,
-						amount: totalCost,
-						currency: "GBP"
-					}
-				);
-			} catch (err) {
+		const makeRequest = () => {
+			console.log(stripeToken);
+			axios.post("http://localhost:4494/payment/create",
+				{
+					tokenId: stripeToken.id,
+					name: stripeToken.card.name,
+					email: stripeToken.email,
+					amount: 200,
+					currency: "GBP",
+					lastFour: stripeToken.card.last4,
+					expiryDate: `${stripeToken.card.exp_month}/${stripeToken.card.exp_year}`
+				}
+			).then(() => {
+				setStripeToken(null);
+			}).catch((err) => {
+				setStripeToken(null);
 				console.error(err);
-			}
+			});
 		}
 		stripeToken && makeRequest();
 	}, [stripeToken]);

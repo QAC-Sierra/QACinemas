@@ -30,7 +30,7 @@ createPayment = (req,res) => {
 })
 }
 
-getPaymentById = async (req, res) => {
+getPaymentById = async(req, res) => {
     await Payment.findOne({payment_id: req.params.id}, (err, payment) => {
         if (err) {
             return res.status(400).json({success:false, error: err});
@@ -43,7 +43,7 @@ getPaymentById = async (req, res) => {
     }).catch(err => console.log(err));
 }
 
-getPayments = async (req, res) => {
+getPayments = async(req, res) => {
     await Payment.find({}, (err, payments) => {
         if (err) {
             return res.status(400).json({success:false, error: err});
@@ -55,7 +55,7 @@ getPayments = async (req, res) => {
     }).catch(err => console.log(err));
 }
 
-deletePayment = async (req, res) => {
+deletePayment = async(req, res) => {
     await Payment.findOneAndDelete({payment_id: req.params.id}, (err, payment) => {
         if (err) {
             return res.status(400).json({success:false, error: err});

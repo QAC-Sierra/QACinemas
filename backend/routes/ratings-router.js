@@ -8,6 +8,6 @@ const router = express.Router();
 router.post('/create', RatingsControl.createRating);
 router.get('/getById/:id', RatingsControl.getRatingById);
 router.get('/getAll', RatingsControl.getRatings);
-router.delete('/delete', RatingsControl.deleteRating)
+router.delete('/delete/:id', RatingsControl.deleteRating)
 
 module.exports =router;

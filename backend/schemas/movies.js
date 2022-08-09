@@ -7,11 +7,11 @@ const Movie = new Schema({
     title: String,
     genre: String,
     actors: [{
-        name: String,
+        type: Array,
     }],
     director: String,
     showingTimes: [{
-        time: String
+        type: Array,
     }],
     imageLink: String
 });

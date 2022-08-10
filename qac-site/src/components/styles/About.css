@@ -1,16 +1,24 @@
-table {
+#team{
     margin-left: auto;
     margin-right: auto;
-    border-spacing: 30px;
+    border-spacing: 20px 25px;
+    border-collapse: separate;
     text-align: left;
+    white-space: nowrap;
+    font-weight: normal;
+}
+#col {
+    padding: 15px;
+    border:2px solid;
 }
 
 h1 {
-    margin-bottom: 50px;
+    margin-bottom: 7%;
 }
 
-th {
-    font-weight: normal;
+h2 {
+    text-align: left;
+    margin-left: 5%;
 }
 
 caption {
@@ -20,4 +28,10 @@ caption {
 
 p {
     text-align:left;
+    margin-left: 5%;
+}
+
+
+table{
+    border-spacing:1.6em;
 }

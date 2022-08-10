@@ -9,8 +9,14 @@ import Row from 'react-bootstrap/Row';
 
 const Contact = () => {
   return (
-<Form>
-      <Row className="mb-3">
+<Form action="https://formsubmit.co/ridwan_kawsar@hotmail.co.uk" method="POST">
+     <input type="text" name="name" required></input>
+     <input type="email" name="email" required></input>
+     <input type="comment" name="comment" required></input>
+     
+     <button type="submit">Send</button>
+
+      {/* <Row className="mb-3">
       <Form.Group as={Col} controlId="formGridPassword">
           <Form.Label>Name</Form.Label>
           <Form.Control type="name" placeholder="Name" />
@@ -32,9 +38,13 @@ const Contact = () => {
         <Form.Control as="textarea" placeholder="Leave a comment here" style={{ height: '100px' }}/>
       </FloatingLabel>
 
+      <Form.Group className="mb-3" id="formGridCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
+
       <Button variant="primary" type="submit">
         Submit
-      </Button>
+      </Button> */}
     </Form>
   );
 }

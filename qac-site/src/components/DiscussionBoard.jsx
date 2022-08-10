@@ -1,15 +1,65 @@
 import React from "react";
+import {CContainer, CFormInput, CForm, CRow, CFormLabel, CCol, CFormCheck, CButton, CFormTextarea,CCard, CCardBody} from "@coreui/react";
+import "./styles/DiscussionBoard.css"
+
 
 const DiscussionBoard = () => {
 	return (
-		<>
-			<header>
-				<h1>
-				This is the Discussion Board for the QA Cinema Website. 
-                </h1>
-			</header>
-		</>
-	);
-}
+		<CContainer>
+		<h1 id="Title1"> Reviews and Discussion Board</h1>
+		<CCard id="card1" style={{ width: '40rem' }}>
+			<CCardBody>
+				<h3> Leave a review, We'de love to know what you thought of the movie!</h3>
+<CForm>
+  <CRow className="mb-3">
+    {/* <CFormLabel className="col-sm-2 col-form-label">Name</CFormLabel> */}
+    <CCol sm={10} >
+      <CFormInput Placeholder="Name" id="Name1"/>
+    </CCol>
+  </CRow>
+  <CRow className="mb-3">
+    {/* <CFormLabel className="col-sm-2 col-form-label">Movie Name</CFormLabel> */}
+    <CCol sm={10} >
+      <CFormInput Placeholder="Movie Name" id="MovieName1"/>
+    </CCol>
+  </CRow>
+  {/* <CRow className="mb-3">
+    <CFormLabel className="col-sm-2 col-form-label">Comments</CFormLabel>
+	<CCol sm={10} >
+      <CFormInput type="comment" id="Comment1"/>
+	  </CCol>
+  </CRow> */}
+  <CRow className="mb-3">
+  <CForm>
+  <CFormTextarea
+  	Placeholder="Comment"
+    id="Comment"
+    rows="3"
+  ></CFormTextarea>
+</CForm>
+  </CRow>
+  <fieldset className="row mb-3">
+    <legend className="col-form-label col-sm-2 pt-0">Movie Rating</legend>
+    <CCol sm={10} >
+	<CFormCheck inline type="radio" name="inlineRadioOptions" id="inlineCheckbox1" value="option1" label="1"/>
+<CFormCheck inline type="radio" name="inlineRadioOptions" id="inlineCheckbox2" value="option2" label="2"/>
+<CFormCheck inline type="radio" name="inlineRadioOptions" id="inlineCheckbox3" value="option3" label="3"/>
+<CFormCheck inline type="radio" name="inlineRadioOptions" id="inlineCheckbox3" value="option3" label="4"/>
+<CFormCheck inline type="radio" name="inlineRadioOptions" id="inlineCheckbox3" value="option3" label="5"/>
+    </CCol>
+  </fieldset>
+  <div className="d-grid d-md-flex justify-content-md-center">
+  <CButton color="primary" className="me-md-2">
+    Submit
+  </CButton>
+  <CButton color="dark">Reset</CButton>
+</div>
 
-export default DiscussionBoard;
+</CForm>
+</CCardBody>
+</CCard>
+</CContainer>
+	)
+  }
+  
+  export default DiscussionBoard

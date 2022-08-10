@@ -40,7 +40,9 @@ const NavigationBar = () => {
       <>
         <CNavbar expand="lg" colorScheme="light" className="bg-light">
           <CContainer fluid>
-            <CNavbarBrand href="#">Navbar</CNavbarBrand>
+            <CNavbarBrand href="#">
+              Navbar
+            </CNavbarBrand>
 
             <CNavbarToggler onClick={() => setVisible(!visible)} />
 
@@ -59,70 +61,68 @@ const NavigationBar = () => {
                 </CNavItem>
 
                 <CNavItem>
-                  <CNavLink href="./New-Releases">New Releases</CNavLink>
+                  <CNavLink href="./New-Releases">
+                    New Releases
+                  </CNavLink>
                 </CNavItem>
 
                 <CNavItem>
-                  <CNavLink href="./Ticket-Bookings">Bookings</CNavLink>
+                  <CNavLink href="./Ticket-Bookings">
+                    Bookings
+                  </CNavLink>
                 </CNavItem>
 
                 <CDropdown variant="nav-item" popper={false}>
-                  <CDropdownToggle color="secondary">More Info</CDropdownToggle>
+                  <CDropdownToggle color="secondary">
+                    More Info
+                  </CDropdownToggle>
 
                   <CDropdownMenu>
                     <CDropdownItem href="./Opening-Times">
                       Opening Times
                     </CDropdownItem>
-
                     <CDropdownDivider />
 
                     <CDropdownItem href="./Classifications">
                       Classifications
                     </CDropdownItem>
-
                     <CDropdownDivider />
 
                     <CDropdownItem href="./Places-To-Go">
                       Places To Go
                     </CDropdownItem>
-
                     <CDropdownDivider />
 
                     <CDropdownItem href="./Getting-There">
                       Getting There
                     </CDropdownItem>
-
                     <CDropdownDivider />
 
                     <CDropdownItem href="./Discussion-Board">
                       Discussion Board
                     </CDropdownItem>
-
                     <CDropdownDivider />
 
-                    <CDropdownItem href="./About">About us</CDropdownItem>
-
+                    <CDropdownItem href="./About">
+                      About us
+                    </CDropdownItem>
                     <CDropdownDivider />
 
-                    <CDropdownItem href="./Contact">Contact us</CDropdownItem>
+                    <CDropdownItem href="./Contact">
+                      Contact us
+                    </CDropdownItem>
                   </CDropdownMenu>
                 </CDropdown>
-
-                <CNavItem></CNavItem>
               </CNavbarNav>
-
-              {/* <CForm className="d-flex">
-
-                <CFormInput type="search" className="me-2" placeholder="Search Term" />
-
-                <CButton type="submit" color="success" variant="outline">
-
-                  Search
-
-                </CButton>
-
-              </CForm> */}
             </CCollapse>
+
+            <CForm className="d-flex">
+              <CFormInput type="search" className="me-2" placeholder="Search Term" />
+              <CButton type="submit" color="success" variant="outline">
+                Search
+              </CButton>
+            </CForm>
+
           </CContainer>
         </CNavbar>
       </>

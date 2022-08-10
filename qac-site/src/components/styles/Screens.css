@@ -1,0 +1,36 @@
+img {
+    height: 400px;
+    width: 600px;
+}
+
+#Image1 {
+    height: 400px;
+    width: 500px;
+}
+
+#Image2 {
+    height: 400px;
+    width: 700px;
+}
+
+#Image3 {
+    height: 400px;
+    width: 600px;
+}
+
+#Image4 {
+    height: 400px;
+    width: 600px;
+}
+
+#pic1 {
+    left: 20px;
+}
+
+#pic {
+    left: -20px;
+}
+
+#SeatingTitle3 {
+    top: 10px;
+}

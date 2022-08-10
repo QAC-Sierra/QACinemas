@@ -64,7 +64,7 @@ const About = () => {
                     </p>
                     
                     <p style={{marginTop: '100px'}}>
-                        If you would like to get in touch with us, visit our <a href="/Contact">contact us</a> section 
+                        If you would like to get in touch with us, visit our <a href="/contact">contact us</a> section 
                     </p>
             </>
     );

@@ -12,70 +12,76 @@ import OpeningTimes from './OpeningTimes';
 import PlacesToGo from './PlacesToGo';
 import Screens from './Screens';
 import TicketBookings from './TicketBookings';
+import Payment from "./payment/Payment";
+import Success from "./payment/Success";
+import Error from "./payment/Error";
 
 
 const NavigationBar = () => {
-  return (
-    <Router>
-      
-      <div className="App">
-        <nav>
-            <button type="button" className="btn btn-outline-dark">
-              <Link to="/">Home</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/listings-gallery">Listings Gallery</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/opening-times">Opening Times</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/getting-there">Getting There</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/new-releases">New Releases</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/classifications">Classifications</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/screens">Screens</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/discussion-board">Discussion Board</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/ticket-bookings">Ticket Bookings</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/places-to-go">Places To Go</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/about">About</Link>
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              <Link className='link' to="/contact">Contact</Link>
-            </button>
-        </nav>
-      </div>
-
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/listings-gallery" element={<ListingsGallery />} />
-        <Route path="/opening-times" element={<OpeningTimes />} />
-        <Route path="/getting-there" element={<GettingThere />} />
-        <Route path="/new-releases" element={<NewReleases />} />
-        <Route path="/classifications" element={<Classifications />} />
-        <Route path="/screens" element={<Screens />} />
-        <Route path="/discussion-board" element={<DiscussionBoard />} />
-        <Route path="/ticket-bookings" element={<TicketBookings />} />
-        <Route path="/places-to-go" element={<PlacesToGo />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      
-    </Router>
-  )
+	return (
+		<Router>
+			
+			<div className="App">
+				<nav>
+					<button type="button" className="btn btn-outline-dark">
+						<Link to="/">Home</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/listings-gallery">Listings Gallery</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/opening-times">Opening Times</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/getting-there">Getting There</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/new-releases">New Releases</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/classifications">Classifications</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/screens">Screens</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/discussion-board">Discussion Board</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/ticket-bookings">Ticket Bookings</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/places-to-go">Places To Go</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/about">About</Link>
+					</button>
+					<button type="button" className="btn btn-outline-dark">
+						<Link className='link' to="/contact">Contact</Link>
+					</button>
+				</nav>
+			</div>
+			
+			<Routes>
+				<Route path="/" element={<HomePage/>}/>
+				<Route path="/listings-gallery" element={<ListingsGallery/>}/>
+				<Route path="/opening-times" element={<OpeningTimes/>}/>
+				<Route path="/getting-there" element={<GettingThere/>}/>
+				<Route path="/new-releases" element={<NewReleases/>}/>
+				<Route path="/classifications" element={<Classifications/>}/>
+				<Route path="/screens" element={<Screens/>}/>
+				<Route path="/discussion-board" element={<DiscussionBoard/>}/>
+				<Route path="/ticket-bookings" element={<TicketBookings/>}/>
+				<Route path="/places-to-go" element={<PlacesToGo/>}/>
+				<Route path="/about" element={<About/>}/>
+				<Route path="/contact" element={<Contact/>}/>
+				<Route path="/payment" element={<Payment/>}/>
+				<Route path="/success" element={<Success/>}/>
+				<Route path="/error" element={<Error/>}/>
+			</Routes>
+		
+		</Router>
+	)
 }
 
 export default NavigationBar;

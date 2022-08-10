@@ -81,7 +81,7 @@ const About = () => {
                         </tr>
                     </table>
                     <p>
-                        If you would like to get in touch with us, visit our <a href="/contact">contact us</a> section 
+                        If you would like to get in touch with us, please visit our <a href="/contact">contact us</a> section 
                     </p>
             </div>
     );

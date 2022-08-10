@@ -1,0 +1,23 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+th {
+    font-weight: normal;
+}
+
+caption {
+    font-weight: bold;
+    font-size: larger;
+}
+
+p {
+    text-align:left;
+}

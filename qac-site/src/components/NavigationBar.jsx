@@ -114,15 +114,15 @@ const NavigationBar = () => {
                   </CDropdownMenu>
                 </CDropdown>
               </CNavbarNav>
-
-              <CForm className="d-flex">
-                <CFormInput type="search" className="me-2" placeholder="Search Term" />
-                <CButton type="submit" color="success" variant="outline">
-                  Search
-                </CButton>
-              </CForm>
-
             </CCollapse>
+
+            <CForm className="d-flex">
+              <CFormInput type="search" className="me-2" placeholder="Search Term" />
+              <CButton type="submit" color="success" variant="outline">
+                Search
+              </CButton>
+            </CForm>
+
           </CContainer>
         </CNavbar>
       </>

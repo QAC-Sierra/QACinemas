@@ -1,5 +1,5 @@
 import React from "react";
-import { CRow, CCol, CCard, CCardImage, CCardBody, CCardTitle, CCardText, CCardFooter } from '@coreui/react';
+import { CRow, CCol, CCard, CCardBody, CCardTitle, CCardText, CCardFooter, CCarousel, CCarouselItem, CImage } from '@coreui/react';
 
 const PlacesToGo = () => {
 	return (
@@ -7,7 +7,35 @@ const PlacesToGo = () => {
 			<CCol xs>
 				<CCard className="h-100">
 					<CCardTitle>Tower of London</CCardTitle>
-					<CCardImage orientation="top" src="/images/react.jpg" />
+					<CCarousel controls transition="crossfade" interval="false">
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/e6/d8/85/tower-of-london.jpg?w=1200&h=-1&s=1"
+									alt="slide 1" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/ff/b4/a6/london-tower.jpg?w=2000&h=-1&s=1"
+									alt="slide 2" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/11/8b/18/tower-of-london.jpg?w=1400&h=-1&s=1"
+									alt="slide 3" />
+							</div>
+						</CCarouselItem>
+					</CCarousel>
 					<CCardBody>
 						<CCardText>
 							<p>
@@ -43,7 +71,35 @@ const PlacesToGo = () => {
 			<CCol xs>
 				<CCard className="h-100">
 					<CCardTitle>Rotunda Bar & Lounge</CCardTitle>
-					<CCardImage orientation="top" src="/images/react.jpg" />
+					<CCarousel controls transition="crossfade" interval="false">
+					<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/67/dc/ee/rotunda-bar.jpg?w=2000&h=-1&s=1"
+									alt="slide 1" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/24/a5/dd/chocolate-panna-praline.jpg?w=1400&h=-1&s=1"
+									alt="slide 2" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/24/a5/69/barrel-aged-cocktails.jpg?w=1400&h=-1&s=1"
+									alt="slide 3" />
+							</div>
+						</CCarouselItem>
+					</CCarousel>
 					<CCardBody>
 						<CCardText>
 							<p>
@@ -79,7 +135,35 @@ const PlacesToGo = () => {
 			<CCol xs>
 				<CCard className="h-100">
 					<CCardTitle>30 St Mary Axe (The Gherkin)</CCardTitle>
-					<CCardImage orientation="top" src="/images/react.jpg" />
+					<CCarousel controls transition="crossfade" interval="false">
+					<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://searcysatthegherkin.co.uk/uploads/2020/12/The-Gherkin-low-scaled.jpg"
+									alt="slide 1" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://thegherkin.com/wp-content/uploads/2022/01/01_Home_DBOX_Pano_L30_WEST_desktop-2160x765.jpg"
+									alt="slide 2" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://media.istockphoto.com/photos/day-cityscape-view-of-london-picture-id536954517?k=20&m=536954517&s=612x612&w=0&h=8bHPLOM9AE16oQtt5XUAsQgRRVcdrWRiRSAJsmTGwZ8="
+									alt="slide 3" />
+							</div>
+						</CCarouselItem>
+					</CCarousel>
 					<CCardBody>
 						<CCardText>
 							<p>
@@ -91,7 +175,7 @@ const PlacesToGo = () => {
 
 							<p>
 								<b>***SPECIAL OFFERS***</b>
-								<div>Early Bird Special - Half Price QA Cinema Ticket when you spend £8 on our Breakfast menu.</div>
+								<div>Early Bird Special - Half Price QA Cinema Ticket when you spend £10 or more on our Breakfast menu.</div>
 							</p>
 
 							<p>
@@ -114,7 +198,35 @@ const PlacesToGo = () => {
 			<CCol xs>
 				<CCard className="h-100">
 					<CCardTitle>Mumbai Masala</CCardTitle>
-					<CCardImage orientation="top" src="/images/react.jpg" />
+					<CCarousel controls transition="crossfade" interval="false">
+					<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://www.whatsonstage.com/dyn/graphics/whatsonstage/v1w1200/mumbai-masala-a-bollywood-cabaret-spectacular-48489.jpeg"
+									alt="slide 1" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/7e/0d/44/caption.jpg?w=1400&h=-1&s=1"
+									alt="slide 2" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://i.ytimg.com/vi/fM00Sya4QMg/maxresdefault.jpg"
+									alt="slide 3" />
+							</div>
+						</CCarouselItem>
+					</CCarousel>
 					<CCardBody>
 						<CCardText>
 							<p>
@@ -150,7 +262,35 @@ const PlacesToGo = () => {
 			<CCol xs>
 				<CCard className="h-100">
 					<CCardTitle>Sky Garden</CCardTitle>
-					<CCardImage orientation="top" src="/images/react.jpg" />
+					<CCarousel controls transition="crossfade" interval="false">
+					<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/ca/96/33/sky.jpg?w=2000&h=-1&s=1"
+									alt="slide 1" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/4a/1e/81/the-darwin-brasserie.jpg?w=1600&h=-1&s=1"
+									alt="slide 2" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/4a/1e/80/the-vinoly-room.jpg?w=1600&h=-1&s=1"
+									alt="slide 3" />
+							</div>
+						</CCarouselItem>
+					</CCarousel>
 					<CCardBody>
 						<CCardText>
 							<p>
@@ -185,7 +325,35 @@ const PlacesToGo = () => {
 			<CCol xs>
 				<CCard className="h-100">
 					<CCardTitle>Tower Bridge</CCardTitle>
-					<CCardImage orientation="top" src="/images/react.jpg" />
+					<CCarousel controls transition="crossfade" interval="false">
+					<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/8d/60/eb/tower-bridge.jpg?w=1000&h=-1&s=1"
+									alt="slide 1" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/24/2e/27/caption.jpg?w=1400&h=-1&s=1"
+									alt="slide 2" />
+							</div>
+						</CCarouselItem>
+						<CCarouselItem>
+							<div style={{ height: '300px', width: '420px' }}>
+								<CImage
+									orientation="top"
+									className="d-block h-100 w-100"
+									src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/df/6d/94/tower-bridge.jpg?w=2000&h=-1&s=1"
+									alt="slide 3" />
+							</div>
+						</CCarouselItem>
+					</CCarousel>
 					<CCardBody>
 						<CCardText>
 							<p>

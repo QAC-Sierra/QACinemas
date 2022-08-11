@@ -1,9 +1,19 @@
-#card1 {
-top: 20px;
-left: -180px;
+.CardStyle {
+    margin: auto;
+    background-color: #191a42;
+    border: black;
 }
 
 #Title1 {
 margin-top: 20px;
 }
+
+#CommentBox {
+    resize: none;
+    height: 150px;
+    width: 80%;
+    position: relative;
+    right: -11px;
+}
+
 

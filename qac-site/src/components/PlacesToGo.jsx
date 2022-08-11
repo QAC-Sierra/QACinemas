@@ -74,7 +74,7 @@ const PlacesToGo = () => {
 								</CCardText>
 							</CCardBody>
 							<CCardFooter>
-								<small className="text-medium-emphasis"><a href="https://www.hrp.org.uk/tower-of-london/#gs.imzFnKo/">Click Here For More Info</a></small>
+								<small className="text-medium-emphasis"><a href="https://www.hrp.org.uk/tower-of-london/#gs.imzFnKo/" target="_blank" rel="noreferrer">Click Here For More Info</a></small>
 							</CCardFooter>
 						</CCard>
 					</CCol>
@@ -141,7 +141,7 @@ const PlacesToGo = () => {
 								</CCardText>
 							</CCardBody>
 							<CCardFooter>
-								<small className="text-medium-emphasis"><a href="https://www.fourseasons.com/tentrinity/dining/bars/rotunda-bar/">Click Here For More Info</a></small>
+								<small className="text-medium-emphasis"><a href="https://www.fourseasons.com/tentrinity/dining/bars/rotunda-bar/" target="_blank" rel="noreferrer">Click Here For More Info</a></small>
 							</CCardFooter>
 						</CCard>
 					</CCol>
@@ -206,7 +206,7 @@ const PlacesToGo = () => {
 								</CCardText>
 							</CCardBody>
 							<CCardFooter>
-								<small className="text-medium-emphasis"><a href="https://thegherkin.com/">Click Here For More Info</a></small>
+								<small className="text-medium-emphasis"><a href="https://thegherkin.com/" target="_blank" rel="noreferrer">Click Here For More Info</a></small>
 							</CCardFooter>
 						</CCard>
 					</CCol>
@@ -273,7 +273,7 @@ const PlacesToGo = () => {
 								</CCardText>
 							</CCardBody>
 							<CCardFooter>
-								<small className="text-medium-emphasis"><a href="https://proudcabaret.com/collections/proud-cabaret-city/products/mumbai-masala-at-proud-city">Click Here For More Info</a></small>
+								<small className="text-medium-emphasis"><a href="https://proudcabaret.com/collections/proud-cabaret-city/products/mumbai-masala-at-proud-city" target="_blank" rel="noreferrer">Click Here For More Info</a></small>
 							</CCardFooter>
 						</CCard>
 					</CCol>
@@ -339,7 +339,7 @@ const PlacesToGo = () => {
 								</CCardText>
 							</CCardBody>
 							<CCardFooter>
-								<small className="text-medium-emphasis"><a href="https://skygarden.london/">Click Here For More Info</a></small>
+								<small className="text-medium-emphasis"><a href="https://skygarden.london/" target="_blank" rel="noreferrer">Click Here For More Info</a></small>
 							</CCardFooter>
 						</CCard>
 					</CCol>
@@ -404,7 +404,7 @@ const PlacesToGo = () => {
 								</CCardText>
 							</CCardBody>
 							<CCardFooter>
-								<small className="text-medium-emphasis"><a href="https://www.towerbridge.org.uk/">Click Here For More Info</a></small>
+								<small className="text-medium-emphasis"><a href="https://www.towerbridge.org.uk/" target="_blank" rel="noreferrer">Click Here For More Info</a></small>
 							</CCardFooter>
 						</CCard>
 					</CCol>

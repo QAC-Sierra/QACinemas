@@ -11,8 +11,8 @@ const Screens = () => {
   <CCol xs>
 	<br></br>
     <CCard className="h-100" id="Card1">
-	<CCardTitle id="SeatingTitle1">Standard Screening</CCardTitle>
-	  <CCardImage orientation="top" src="https://simpledcp2-vvhvkfxrvp.netdna-ssl.com/content/uploads/2017/12/2017-03-29_014529-jpg.jpg?x26867" />
+	<CCardTitle>Standard Screening</CCardTitle>
+	  <CCardImage orientation="top" className="screenpic" src="https://simpledcp2-vvhvkfxrvp.netdna-ssl.com/content/uploads/2017/12/2017-03-29_014529-jpg.jpg?x26867" />
       <CCardBody>
         <CCardText>
           This is the venue for our standard screenings.
@@ -26,8 +26,8 @@ const Screens = () => {
   <CCol xs>
   <br></br>
     <CCard className="h-100" id="Card2">
-	<CCardTitle id="SeatingTitle2">Delux Screening</CCardTitle>
-	  <CCardImage orientation="top" src="https://www.kentonline.co.uk/_media/img/Y13NW9LC0B721K0ASKEJ.jpg" />
+	<CCardTitle>Delux Screening</CCardTitle>
+	  <CCardImage orientation="top" className="screenpic" src="https://www.kentonline.co.uk/_media/img/Y13NW9LC0B721K0ASKEJ.jpg" />
       <CCardBody>
         <CCardText>
         This is the venue for our Delux screenings.
@@ -44,8 +44,8 @@ const Screens = () => {
   <CCol xs>
 	<br></br>
     <CCard className="h-100" id="Card3">
-	<CCardTitle id="SeatingTitle3">Standard Seating</CCardTitle>
-	  <CCardImage orientation="top" src="https://homemcr.org/app/uploads/2015/04/Cinema-1-Seating-Plan.jpg" />
+	<CCardTitle> Standard Seating</CCardTitle>
+	  <CCardImage orientation="top" className="screenpic" src="https://homemcr.org/app/uploads/2015/04/Cinema-1-Seating-Plan.jpg" />
       <CCardBody>
         <CCardText>
           This is the seating plan for our standard 2d screenings.
@@ -59,8 +59,8 @@ const Screens = () => {
   <CCol xs>
   <br></br>
     <CCard className="h-100" id="Card4">
-	<CCardTitle id="SeatingTitle4">Delux Seating</CCardTitle>
-	  <CCardImage orientation="top" src="https://homemcr.org/app/uploads/2015/04/Cinema-2.jpg" />
+	<CCardTitle>Delux Seating</CCardTitle>
+	  <CCardImage orientation="top" className="screenpic" src="https://homemcr.org/app/uploads/2015/04/Cinema-2.jpg" />
       <CCardBody>
         <CCardText>
         This is the seating plan for our Delux screenings.

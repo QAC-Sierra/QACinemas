@@ -17,9 +17,9 @@ const Classifications = () => {
 			<Row>
 				<Accordion>
 					<Accordion.Item eventKey="0">
-						<Accordion.Header><img
-							src="https://static.wikia.nocookie.net/rating-system/images/8/88/BBFC_U.svg"
-							alt="U"/>
+						<Accordion.Header><img className="classificationImg"
+						                       src="https://static.wikia.nocookie.net/rating-system/images/8/88/BBFC_U.svg"
+						                       alt="U"/>
 							Suitable for all ages.
 						</Accordion.Header>
 						<Accordion.Body>
@@ -31,7 +31,8 @@ const Classifications = () => {
 					</Accordion.Item>
 					<Accordion.Item eventKey="1">
 						<Accordion.Header>
-							<img src="https://static.wikia.nocookie.net/rating-system/images/b/b5/BBFC_PG.svg"
+							<img className="classificationImg"
+							     src="https://static.wikia.nocookie.net/rating-system/images/b/b5/BBFC_PG.svg"
 							     alt="PG"/>
 							Parental Guidance
 						</Accordion.Header>
@@ -46,9 +47,9 @@ const Classifications = () => {
 					</Accordion.Item>
 					<Accordion.Item eventKey="2">
 						<Accordion.Header>
-							<img
-								src="https://static.wikia.nocookie.net/rating-system/images/8/87/BBFC_12A.svg"
-								alt="12A"/>
+							<img className="classificationImg"
+							     src="https://static.wikia.nocookie.net/rating-system/images/8/87/BBFC_12A.svg"
+							     alt="12A"/>
 							Cinema release suitable for 12 years and over
 						</Accordion.Header>
 						<Accordion.Body>
@@ -63,7 +64,8 @@ const Classifications = () => {
 					</Accordion.Item>
 					<Accordion.Item eventKey="3">
 						<Accordion.Header>
-							<img src="https://static.wikia.nocookie.net/rating-system/images/8/84/BBFC_12.svg"
+							<img className="classificationImg"
+							     src="https://static.wikia.nocookie.net/rating-system/images/8/84/BBFC_12.svg"
 							     alt="12"/>
 							Video release suitable for 12 years and over
 						</Accordion.Header>
@@ -78,9 +80,9 @@ const Classifications = () => {
 						</Accordion.Body>
 					</Accordion.Item>
 					<Accordion.Item eventKey="4">
-						<Accordion.Header><img
-							src="https://static.wikia.nocookie.net/rating-system/images/0/03/BBFC_15.svg"
-							alt="15"/>
+						<Accordion.Header><img className="classificationImg"
+						                       src="https://static.wikia.nocookie.net/rating-system/images/0/03/BBFC_15.svg"
+						                       alt="15"/>
 							Suitable only for 15 years and older.
 						</Accordion.Header>
 						<Accordion.Body>
@@ -90,9 +92,9 @@ const Classifications = () => {
 						</Accordion.Body>
 					</Accordion.Item>
 					<Accordion.Item eventKey="5">
-						<Accordion.Header><img
-							src="https://static.wikia.nocookie.net/rating-system/images/9/9f/BBFC_18.svg"
-							alt="18"/>
+						<Accordion.Header><img className="classificationImg"
+						                       src="https://static.wikia.nocookie.net/rating-system/images/9/9f/BBFC_18.svg"
+						                       alt="18"/>
 							Suitable only for adults.
 						</Accordion.Header>
 						<Accordion.Body>

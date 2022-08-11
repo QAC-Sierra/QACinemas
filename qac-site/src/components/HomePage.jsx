@@ -1,6 +1,19 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
+import Movies from "./Movies";
+import "./styles/HomePage.css"
 
 const HomePage = () => {
+	const currentDate = new Date();
+	const queryDate = currentDate.toJSON().split("T")[0];
+	const nowShowing = `https://api.themoviedb.org/3/discover/movie?&api_key=581ff752d0b7378a67028dc38a686b58&release_date.lte=${queryDate}&sort_by=popularity.desc`;
+	const upcoming = `https://api.themoviedb.org/3/discover/movie?&api_key=581ff752d0b7378a67028dc38a686b58&release_date.gte=${queryDate}&sort_by=popularity.desc`;
+	const [movies, setMovies] = useState([]);
+	
+	useEffect(() => {
+		axios.get(nowShowing)
+			.then(res => setMovies(res.data.results))
+	}, [])
 	return (
 		<>
 			<header>
@@ -21,6 +34,11 @@ const HomePage = () => {
 					board and leave your own reviews and even see the local spots where you can satiate your appetite
 					and wet your beak.
 				</p>
+			</div>
+			<h3>Out Now:</h3>
+			<div className="container-fluid movie-container"></div>
+			<div className="row">
+				{movies.map((movie, i) => i < 10 ? <Movies key={movie.id} {...movie}/> : null)}
 			</div>
 		</>
 	);

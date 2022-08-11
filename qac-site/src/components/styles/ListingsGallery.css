@@ -17,13 +17,13 @@
 }
 
 #listingsTable tr {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #353dab;
 }
 
 #listingsTable tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    background-color: #202157;
 }
 
 #listingsTable tr:last-of-type {
-    border-bottom: 2px solid #720303;
+    border-bottom: 2px solid #000000;
 }

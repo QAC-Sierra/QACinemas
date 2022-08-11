@@ -21,11 +21,11 @@ const NewReleases = () => {
 						
 						</td>
 						<td>
-						<p className="movieText">
-							Starring: Letitia Wright, Lupita Nyong'o<br />
-							<br />
-							Black Panther: Wakanda Forever is an upcoming American superhero film based on the Marvel Comics character Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is intended to be the sequel to Black Panther and the 30th film in the Marvel Cinematic Universe.
-						</p>
+							<p className="movieText">
+								Starring: Letitia Wright, Lupita Nyong'o<br />
+								<br />
+								Black Panther: Wakanda Forever is an upcoming American superhero film based on the Marvel Comics character Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is intended to be the sequel to Black Panther and the 30th film in the Marvel Cinematic Universe.
+							</p>
 						</td>
 						<td>
 						Release date: 11/11/2022
@@ -69,7 +69,7 @@ const NewReleases = () => {
 								<br />
 								Four years after her last encounter with masked killer Michael Myers, Laurie Strode is living with her granddaughter and trying to finish her memoir. Myers hasn't been seen since, and Laurie finally decides to liberate herself from rage and fear and embrace life. However, when a young man stands accused of murdering a boy that he was babysitting, it ignites a cascade of violence and terror that forces Laurie to confront the evil she can't control.
 							</p>
-								</td>
+						</td>
 						
 						<td>
 							Release Date: 14/10/2022

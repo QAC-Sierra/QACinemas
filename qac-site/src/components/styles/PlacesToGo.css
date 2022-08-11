@@ -1,0 +1,19 @@
+header{
+    margin-top:5vh;
+    margin-bottom: 5vh;
+}
+
+.card-title{
+    color:#191a42;
+}
+
+.card-body {
+    background-color: #191a42;
+    color:white;
+}
+
+.placesImg {
+    max-height: 300px;
+    min-height: 300px;
+    width: 100%;
+}

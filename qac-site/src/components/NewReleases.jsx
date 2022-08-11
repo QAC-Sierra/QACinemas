@@ -16,7 +16,7 @@ const NewReleases = () => {
 						<td>
 						<b>Black Panther: Wakanda Forever</b> <br /> 
 							<a href="https://www.imdb.com/title/tt10648342/" target="_blank" rel="noreferrer">
-								<img className="movieImage" src="https://lumiere-a.akamaihd.net/v1/images/01fe70e80a0ac867c9a9470641df6848_2764x4096_86b89bf5.jpeg?region=0,0,2764,4096" alt="Black Panther: Wakanda Forever poster" />
+								<img className="movieImage" src="https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg" alt="Black Panther: Wakanda Forever poster" />
 							</a>
 						
 						</td>

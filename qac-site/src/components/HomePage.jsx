@@ -5,6 +5,9 @@ const HomePage = () => {
 		<>
 			<header>
 				<nav></nav>
+				<img
+					src="https://dr3h7ptpe31k5.cloudfront.net/Assets/images/5202/Serviced-Office-(Creative)-London-London-1-St.-Katharines-Way-1275861.jpg"
+					alt="QA Cinema"/>
 				<h1>Welcome to QA Cinema</h1>
 				<h2>
 					For all your movie going needs, have a look around and be sure to come visit us, we have a movie for

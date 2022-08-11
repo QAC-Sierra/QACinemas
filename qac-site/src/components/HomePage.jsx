@@ -4,16 +4,35 @@ import Movies from "./Movies";
 import "./styles/HomePage.css";
 
 const HomePage = () => {
-	const currentDate = new Date();
-	const queryDate = currentDate.toJSON().split("T")[0];
-	const nowShowing = `https://api.themoviedb.org/3/discover/movie?&api_key=581ff752d0b7378a67028dc38a686b58&release_date.lte=${queryDate}&sort_by=popularity.desc`;
-	const upcoming = `https://api.themoviedb.org/3/discover/movie?&api_key=581ff752d0b7378a67028dc38a686b58&release_date.gte=${queryDate}&sort_by=popularity.desc`;
-	const [movies, setMovies] = useState([]);
+	const [date, setDate] = useState("");
+	
+	useEffect(() => {
+		setDate(new Date().toJSON().split("T")[0]);
+		console.log(date);
+	}, []);
+	
+	const nowShowing = `https://api.themoviedb.org/3/discover/movie?&api_key=581ff752d0b7378a67028dc38a686b58&language=en&region=GB&release_date.lte=${date}`;
+	const upcoming = `https://api.themoviedb.org/3/discover/movie?&api_key=581ff752d0b7378a67028dc38a686b58&&language=en&region=GB&sort_by=release_date.asc&release_date.gte=${date}&page=5`;
+	const [currentMovies, setCurrentMovies] = useState([]);
+	const [upcomingMovies, setUpcomingMovies] = useState([]);
 	
 	useEffect(() => {
 		axios.get(nowShowing)
-			.then(res => setMovies(res.data.results))
-	}, [])
+			.then(res => {
+				console.log(res.data);
+				setCurrentMovies(res.data.results)
+			})
+	}, []);
+	
+	useEffect(() => {
+		axios.get(upcoming)
+			.then((res) => {
+				console.log(res.data);
+				setUpcomingMovies(res.data.results)
+			})
+			.catch(err => console.error(err));
+	}, []);
+	
 	return (
 		<>
 			<header>
@@ -35,10 +54,18 @@ const HomePage = () => {
 					and wet your beak.
 				</p>
 			</div>
-			<h3>Now Showing:</h3>
 			<div className="container-fluid movie-container">
 				<div className="row">
-					{movies.map((movie, i) => i < 10 ? <Movies key={movie.id} {...movie}/> : null)}
+					<h3>Now Showing</h3>
+				</div>
+				<div className="row">
+					{currentMovies.map((movie, i) => i < 10 ? <Movies key={movie.id} {...movie}/> : null)}
+				</div>
+				<div className="row">
+					<h3>Coming Soon</h3>
+				</div>
+				<div className="row">
+					{upcomingMovies.map((movie, i) => i < 10 ? <Movies key={movie.id} {...movie}/> : null)}
 				</div>
 			</div>
 		</>

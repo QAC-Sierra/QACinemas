@@ -88,6 +88,11 @@ const NavigationBar = () => {
                     </CDropdownItem>
                     <CDropdownDivider />
 
+                    <CDropdownItem href="./Screens">
+                      Screens
+                    </CDropdownItem>
+                    <CDropdownDivider />
+
                     <CDropdownItem href="./Places-To-Go">
                       Places To Go
                     </CDropdownItem>

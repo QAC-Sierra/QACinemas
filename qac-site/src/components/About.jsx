@@ -4,9 +4,12 @@ import "./styles/About.css";
 
 const About = () => {
     return (
-            <div>
+        <>
+        
+            <div className="about">
+                <br/><br />
                     <h1>About QA Cinema</h1>
-                    
+                    <container>
                     <h2>
                     ABOUT US:
                     </h2>
@@ -18,7 +21,7 @@ const About = () => {
                     </p>
                     <h2>MEET THE TEAM:</h2>
                     <table id="team">
-                        
+                        <tbody>
                         
                         <tr>
                             <td id="col">
@@ -53,13 +56,14 @@ const About = () => {
                                 <br/> 
                             </td>
                         </tr>
-                        
+                        </tbody>
                     </table>
                     <h2>SCRUM PROCESS</h2>
-                    <table>
+                    <table id="scrumTable">
+                        <tbody>
                         <tr>
                             <td>
-                                <p>
+                                <p id="scrum">
                                     This project was developed through using a Scrum process.
                                     <br/><br/>
                                     Scrum is a framework that aims to help a team work iteratively and incrementally on a complex project. It does this by splitting development time into sprints, during a sprint
@@ -79,11 +83,16 @@ const About = () => {
                                 <img src="https://thinkthyme.com/wp-content/uploads/2017/11/Scrum-Management-Explained.png" alt="Scrum.org logo" />
                             </td>
                         </tr>
+                        </tbody>
                     </table>
-                    <p>
+                    </container>
+                    </div>
+                    
+                    <p id="contactUs">
                         If you would like to get in touch with us, please visit our <a href="/contact">contact us</a> section 
                     </p>
-            </div>
+                    <br />
+            </>
     );
 };
 

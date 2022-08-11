@@ -1,7 +1,7 @@
 #team{
     margin-left: auto;
     margin-right: auto;
-    border-spacing: 20px 25px;
+    border-spacing: 15em 3em;
     border-collapse: separate;
     text-align: left;
     white-space: nowrap;
@@ -12,26 +12,32 @@
     border:2px solid;
 }
 
-h1 {
-    margin-bottom: 7%;
+#scrumTable{
+    border-spacing:1.6em;
+    width: 98.3%;
+    margin:auto;
 }
 
-h2 {
+.about {
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about > h2 {
     text-align: left;
     margin-left: 5%;
 }
 
-caption {
+.about > caption {
     font-weight: bold;
     font-size: larger;
 }
 
-p {
-    text-align:left;
-    margin-left: 5%;
+container {
+    text-align: left; 
 }
 
-
-table{
-    border-spacing:1.6em;
+#contactUs {
+    margin: auto;
 }

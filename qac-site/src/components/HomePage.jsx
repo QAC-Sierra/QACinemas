@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import Movies from "./Movies";
-import "./styles/HomePage.css"
+import "./styles/HomePage.css";
 
 const HomePage = () => {
 	const currentDate = new Date();
@@ -35,10 +35,11 @@ const HomePage = () => {
 					and wet your beak.
 				</p>
 			</div>
-			<h3>Out Now:</h3>
-			<div className="container-fluid movie-container"></div>
-			<div className="row">
-				{movies.map((movie, i) => i < 10 ? <Movies key={movie.id} {...movie}/> : null)}
+			<h3>Now Showing:</h3>
+			<div className="container-fluid movie-container">
+				<div className="row">
+					{movies.map((movie, i) => i < 10 ? <Movies key={movie.id} {...movie}/> : null)}
+				</div>
 			</div>
 		</>
 	);

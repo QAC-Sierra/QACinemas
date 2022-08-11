@@ -5,29 +5,30 @@ const NewReleases = () => {
 	return (
 		<>
 		<header>
-			<h1>Current Listings Gallery</h1>
-			<h3>These are the current films showing in the cinema</h3>
+			<h1>Future Listings Gallery</h1>
+			<h3>These are the films that will be showing in future in the cinema</h3>
 		</header>
 
 		<div>
-			<table id="listingsTable">
+			<table id="newReleasesTable">
 				<tbody>
 					<tr className="movieRow">
 						<td>
 						<b>Black Panther: Wakanda Forever</b> <br /> 
 							<a href="https://www.imdb.com/title/tt10648342/" target="_blank" rel="noreferrer">
-								<img className="movieImage" src="https://lumiere-a.akamaihd.net/v1/images/01fe70e80a0ac867c9a9470641df6848_2764x4096_86b89bf5.jpeg?region=0,0,2764,4096" alt="Thor poster" />
+								<img className="movieImage" src="https://lumiere-a.akamaihd.net/v1/images/01fe70e80a0ac867c9a9470641df6848_2764x4096_86b89bf5.jpeg?region=0,0,2764,4096" alt="Black Panther: Wakanda Forever poster" />
 							</a>
 						
 						</td>
 						<td>
 						<p className="movieText">
-						Starring: Chris Hemsworth, Natalie Portman.<br />
-						<br />
-						Thor embarks on a journey unlike anything he's ever faced -- a quest for inner peace. However, his retirement gets interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods. To combat the threat, Thor enlists the help of King Valkyrie, Korg and ex-girlfriend Jane Foster, who -- to his surprise -- inexplicably wields his magical hammer. Together, they set out on a harrowing cosmic adventure to uncover the mystery of the God Butcher's vengeance.</p>
+							Starring: Letitia Wright, Lupita Nyong'o<br />
+							<br />
+							Black Panther: Wakanda Forever is an upcoming American superhero film based on the Marvel Comics character Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is intended to be the sequel to Black Panther and the 30th film in the Marvel Cinematic Universe.
+						</p>
 						</td>
 						<td>
-						Release date: 11/08/2022
+						Release date: 11/11/2022
 						</td>
 					</tr>
 						
@@ -49,7 +50,7 @@ const NewReleases = () => {
 						</td>
 
 						<td>
-							Release Date: 09/08/2022
+							Release Date: 04/11/2022
 						</td>
 					</tr>
 

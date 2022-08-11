@@ -3,12 +3,12 @@
     height: 300px;
 }
 
-#listingsTable {
+#newReleasesTable {
     margin:auto;
     width: 60%;
     border-collapse: collapse;
     min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.152);   
 }
 
 .movieText {
@@ -16,14 +16,15 @@
     text-align: left;
 }
 
-#listingsTable tr {
-    border-bottom: 1px solid #dddddd;
+#newReleasesTable tr {
+    border-bottom: 1px solid #353dab;
 }
 
-#listingsTable tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+#newReleasesTable tr:nth-of-type(even) {
+    background-color: #202157;
+
 }
 
-#listingsTable tr:last-of-type {
-    border-bottom: 2px solid #720303;
+#newReleasesTable tr:last-of-type {
+    border-bottom: 2px solid #000000;
 }

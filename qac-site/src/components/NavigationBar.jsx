@@ -59,14 +59,14 @@ const NavigationBar = () => {
 							</CNavItem>
 							
 							<CNavItem>
-								<CNavLink href="/new-releases">
-									New Releases
+								<CNavLink>
+                  <Link to="/new-releases">New Releases</Link>
 								</CNavLink>
 							</CNavItem>
 							
 							<CNavItem>
-								<CNavLink href="/ticket-bookings">
-									Bookings
+								<CNavLink>
+                  <Link to="/ticket-bookings">Bookings</Link>
 								</CNavLink>
 							</CNavItem>
 							
@@ -76,43 +76,59 @@ const NavigationBar = () => {
 								</CDropdownToggle>
 								
 								<CDropdownMenu>
-									<CDropdownItem href="/opening-times">
-										Opening Times
+									<CDropdownItem>
+                    <CNavLink> 
+                      <Link to="/opening-times">Opening Times</Link>
+                      </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
 									
-									<CDropdownItem href="/classifications">
-										Classifications
+									<CDropdownItem>
+                  <CNavLink>
+                     <Link to="/classifications">Classifications</Link>
+                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
-									
-									<CDropdownItem href="/screens">
-										Screens
+
+                  <CDropdownItem>
+                  <CNavLink>
+                     <Link to="/screens">Screens</Link>
+                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
-									
-									<CDropdownItem href="/places-to-go">
-										Places To Go
+
+                  <CDropdownItem>
+                  <CNavLink>
+                     <Link to="/places-to-go">Places To Go</Link>
+                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
-									
-									<CDropdownItem href="/getting-there">
-										Getting There
+
+                  <CDropdownItem>
+                  <CNavLink>
+                     <Link to="/getting-there">Getting There</Link>
+                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
-									
-									<CDropdownItem href="/discussion-board">
-										Discussion Board
+
+                  <CDropdownItem>
+                  <CNavLink>
+                     <Link to="/discussion-board">Discussion Board</Link>
+                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
-									
-									<CDropdownItem href="/about">
-										About us
+
+                  <CDropdownItem>
+                  <CNavLink>
+                     <Link to="/about">About</Link>
+                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
-									
-									<CDropdownItem href="/contact">
-										Contact us
+
+                  <CDropdownItem>
+                  <CNavLink>
+                     <Link to="/contact">Contact</Link>
+                  </CNavLink>
 									</CDropdownItem>
 								</CDropdownMenu>
 							</CDropdown>

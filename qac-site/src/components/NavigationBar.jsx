@@ -77,58 +77,42 @@ const NavigationBar = () => {
 								
 								<CDropdownMenu>
 									<CDropdownItem>
-                    <CNavLink> 
                       <Link to="/opening-times">Opening Times</Link>
-                      </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
 									
 									<CDropdownItem>
-                  <CNavLink>
                      <Link to="/classifications">Classifications</Link>
-                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
 
                   <CDropdownItem>
-                  <CNavLink>
                      <Link to="/screens">Screens</Link>
-                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
 
                   <CDropdownItem>
-                  <CNavLink>
                      <Link to="/places-to-go">Places To Go</Link>
-                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
 
                   <CDropdownItem>
-                  <CNavLink>
                      <Link to="/getting-there">Getting There</Link>
-                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
 
                   <CDropdownItem>
-                  <CNavLink>
                      <Link to="/discussion-board">Discussion Board</Link>
-                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
 
                   <CDropdownItem>
-                  <CNavLink>
                      <Link to="/about">About</Link>
-                     </CNavLink>
 									</CDropdownItem>
 									<CDropdownDivider/>
 
                   <CDropdownItem>
-                  <CNavLink>
                      <Link to="/contact">Contact</Link>
-                  </CNavLink>
 									</CDropdownItem>
 								</CDropdownMenu>
 							</CDropdown>

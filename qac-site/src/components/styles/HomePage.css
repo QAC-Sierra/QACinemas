@@ -1,3 +1,22 @@
+header {
+    margin-top: 50px;
+}
+
+.carousel {
+    padding: 50px;
+}
+
+.carousel-poster {
+    position: relative;
+    bottom: 300px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.carousel-item {
+    height: 650px;
+}
+
 .movie {
     width: 300px;
     padding: 1rem;

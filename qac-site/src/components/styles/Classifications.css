@@ -1,0 +1,11 @@
+.accordion-button {
+    gap: 20px;
+}
+
+.accordion-body {
+    text-align: left;
+}
+
+.classificationImg {
+    height: 50px;
+}

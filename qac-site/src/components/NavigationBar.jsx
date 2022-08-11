@@ -53,7 +53,9 @@ const NavigationBar = () => {
 								</CNavLink>
 							</CNavItem>
 							<CNavItem>
-								<CNavLink><Link to="/listings-gallery">Listings Gallery</Link></CNavLink>
+								<CNavLink>
+									<Link to="/listings-gallery">Listings Gallery</Link>
+								</CNavLink>
 							</CNavItem>
 							
 							<CNavItem>

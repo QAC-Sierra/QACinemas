@@ -1,20 +1,16 @@
-header {
-    margin-top: 50px;
-}
-
-.carousel {
-    padding: 50px;
-}
-
 .carousel-poster {
     position: relative;
-    bottom: 300px;
+    bottom: 250px;
     width: 100%;
-    overflow: scroll;
 }
 
-.carousel-item {
-    height: 650px;
+.banner {
+    height: 800px;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .movie {

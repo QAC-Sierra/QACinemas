@@ -67,7 +67,7 @@ export default function App() {
 
 function Movies({movie, onChange}) {
 	return (
-		<body className="bookings">
+		<body className="container-fluid">
 			<div className="Movies">
 				<label htmlFor="movie">Pick a movie</label>
 				<select

@@ -19,8 +19,7 @@ const createPayment = (req, res) => {
 			expiryDate: req.body.expiryDate
 		});
 		payment.save().then(() => {
-			res.status(200).send(token);
-			// console.log(token);
+			res.status(201).send(token);
 		});
 	}).catch(err => {
 		res.status(400).send(err);

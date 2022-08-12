@@ -1,0 +1,18 @@
+#logo {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.navbar {
+    max-height: 100px;
+}
+
+.nav-link a {
+    color: grey;
+    text-decoration: none;
+}
+
+.dropdown-item a {
+    color: grey;
+    text-decoration: none;
+}

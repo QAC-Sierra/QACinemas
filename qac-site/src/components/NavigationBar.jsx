@@ -27,6 +27,7 @@ import {
   CDropdownItem,
   CDropdownDivider,
 } from "@coreui/react";
+import "./styles/NavigationBar.css";
 
 const NavigationBar = () => {
   const [visible, setVisible] = useState(false);
@@ -36,7 +37,7 @@ const NavigationBar = () => {
       <>
         <CNavbar expand="lg" colorScheme="light" className="bg-light">
           <CContainer fluid>
-            <CNavbarBrand>Navbar</CNavbarBrand>
+            <CNavbarBrand><img  id="logo" src="https://i.imgur.com/rsOAQ8H.png" alt="logo" /></CNavbarBrand>
 
             <CNavbarToggler onClick={() => setVisible(!visible)} />
 

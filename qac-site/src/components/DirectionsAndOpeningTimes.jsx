@@ -10,7 +10,7 @@ import {
   CCardText,
   CCardFooter,
 } from "@coreui/react";
-import "./styles/GettingThere.css";
+import "./styles/DirectionsAndOpeningTimes.css";
 
 const GettingThere = () => {
   return (

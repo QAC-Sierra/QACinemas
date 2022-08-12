@@ -9,9 +9,34 @@ const movies = [
 		occupied: [20, 21, 30, 1, 2, 8],
 	},
 	{
+		name: 'Prey',
+		price: 9,
+		occupied: [10, 12, 50, 33, 28, 47],
+	},
+	{
 		name: 'Jurassic World Dominion',
 		price: 12,
 		occupied: [9, 41, 35, 11, 65, 26],
+	},
+	{
+		name: 'Minions: The Rise of Gru',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
+	},
+	{
+		name: 'Top Gun: Maverick',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
+	},
+	{
+		name: 'The Black Phone',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
+	},
+	{
+		name: 'Doctor Strange In The Mulitverse of Madness',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
 	},
 	{
 		name: 'The Gray Man',
@@ -19,10 +44,16 @@ const movies = [
 		occupied: [37, 25, 44, 13, 2, 3],
 	},
 	{
-		name: 'Prey',
-		price: 9,
-		occupied: [10, 12, 50, 33, 28, 47],
+		name: 'Lightyear',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
 	},
+	{
+		name: 'Purple Hearts',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
+	},
+	
 ]
 
 const seats = Array.from({length: 8 * 8}, (_, i) => i)

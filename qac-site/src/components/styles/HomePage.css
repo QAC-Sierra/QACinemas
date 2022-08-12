@@ -1,0 +1,43 @@
+header {
+    margin-top: 50px;
+}
+
+.carousel {
+    padding: 50px;
+}
+
+.carousel-poster {
+    position: relative;
+    bottom: 300px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.carousel-item {
+    height: 650px;
+}
+
+.movie {
+    width: 300px;
+    padding: 1rem;
+}
+
+.movie-poster img {
+    max-width: 100%;
+}
+
+.movie-poster:hover {
+    position: relative;
+    transform: scale(1.1, 1.1);
+}
+
+.movie-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-container > .row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}

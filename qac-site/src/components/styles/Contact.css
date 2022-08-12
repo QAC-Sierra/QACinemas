@@ -1,0 +1,12 @@
+#CommentBox {
+    resize: none;
+    height: 150px;
+    width: 100%;
+    margin: auto;
+}
+
+.Card {
+    margin: auto;
+    background-color: #191a42;
+    border: black;
+}

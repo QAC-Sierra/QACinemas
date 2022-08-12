@@ -1,29 +1,59 @@
-import React, {useState} from 'react'
-import clsx from 'clsx'
-import DtPicker from 'react-datetime-picker'
-// import './styles/Ticket.css'
+import React, {useState} from 'react';
+import clsx from 'clsx';
+import './styles/Ticket.css';
 
 const movies = [
 	{
-		name: 'Avenger',
+		name: 'Thor: Love and Thunder',
 		price: 10,
 		occupied: [20, 21, 30, 1, 2, 8],
 	},
 	{
-		name: 'Joker',
+		name: 'Prey',
+		price: 9,
+		occupied: [10, 12, 50, 33, 28, 47],
+	},
+	{
+		name: 'Jurassic World Dominion',
 		price: 12,
 		occupied: [9, 41, 35, 11, 65, 26],
 	},
 	{
-		name: 'Toy story',
+		name: 'Minions: The Rise of Gru',
 		price: 8,
 		occupied: [37, 25, 44, 13, 2, 3],
 	},
 	{
-		name: 'the lion king',
-		price: 9,
-		occupied: [10, 12, 50, 33, 28, 47],
+		name: 'Top Gun: Maverick',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
 	},
+	{
+		name: 'The Black Phone',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
+	},
+	{
+		name: 'Doctor Strange In The Mulitverse of Madness',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
+	},
+	{
+		name: 'The Gray Man',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
+	},
+	{
+		name: 'Lightyear',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
+	},
+	{
+		name: 'Purple Hearts',
+		price: 8,
+		occupied: [37, 25, 44, 13, 2, 3],
+	},
+	
 ]
 
 const seats = Array.from({length: 8 * 8}, (_, i) => i)
@@ -43,9 +73,9 @@ export default function App() {
 						setSelectedMovie(movie)
 					}}
 				/>
-				<DtPicker onChange={onChange}
+				{/* <DateTimePickerComponent onChange={onChange}
 				          value={value}
-				/>
+				/> */}
 				<ShowCase/>
 				<Cinema
 					movie={selectedMovie}
@@ -55,9 +85,9 @@ export default function App() {
 				
 				<p className="info">
 					You have selected <span className="count">{selectedSeats.length}</span>{' '}
-					seats for the price of{' '}
+					seats for the price of £{' '}
 					<span className="total">
-          {selectedSeats.length * selectedMovie.price}$
+          {selectedSeats.length * selectedMovie.price}
         </span>
 				</p>
 			</div>
@@ -67,7 +97,7 @@ export default function App() {
 
 function Movies({movie, onChange}) {
 	return (
-		<body className="bookings">
+		<body className="container-fluid">
 			<div className="Movies">
 				<label htmlFor="movie">Pick a movie</label>
 				<select
@@ -79,7 +109,7 @@ function Movies({movie, onChange}) {
 				>
 					{movies.map(movie => (
 						<option key={movie.name} value={movie.name}>
-							{movie.name} (${movie.price})
+							{movie.name} (£{movie.price})
 						</option>
 					))}
 				</select>
@@ -119,7 +149,7 @@ function Cinema({movie, selectedSeats, onSelectedSeatsChange}) {
 	}
 	
 	return (
-		<body className="bookings">
+		<body className="Seating">
 			<div className="Cinema">
 				<div className="screen"/>
 				

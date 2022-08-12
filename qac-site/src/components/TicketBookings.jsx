@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import clsx from 'clsx'
 import DtPicker from 'react-datetime-picker'
-// import './styles/Ticket.css'
+import './styles/Ticket.css'
 
 const movies = [
 	{

@@ -1,11 +1,5 @@
-.CardStyle {
-    margin: auto;
-    background-color: #191a42;
-    border: black;
-}
-
 #Title1 {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 #CommentBox {
@@ -16,4 +10,38 @@ margin-top: 20px;
     right: -11px;
 }
 
+.comment-card .card {
+    margin: 10px;
+    text-align: left;
+    color: black;
+    background-color: white;
+}
 
+.comment-card .card-header {
+    font-weight: bold;
+}
+
+.comment-card .card-subtitle {
+    margin-top: 4px;
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+.comment-card .card-body {
+    background-color: white;
+    color: black;
+}
+
+.comment-card .card-footer {
+    color: black;
+}
+
+.CardStyle {
+    margin: auto;
+    background-color: #191a42;
+    border: black;
+}
+
+.CardStyle #CommentBox {
+    margin-left: 1px;
+}

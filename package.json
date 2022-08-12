@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "react-datetime-picker": "^3.5.0"
+  }
+}

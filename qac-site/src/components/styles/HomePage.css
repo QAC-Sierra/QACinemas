@@ -1,0 +1,39 @@
+.carousel-poster {
+    position: relative;
+    bottom: 250px;
+    width: 100%;
+}
+
+.banner {
+    height: 800px;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.movie {
+    width: 300px;
+    padding: 1rem;
+}
+
+.movie-poster img {
+    max-width: 100%;
+}
+
+.movie-poster:hover {
+    position: relative;
+    transform: scale(1.1, 1.1);
+}
+
+.movie-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-container > .row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
